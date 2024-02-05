@@ -18,12 +18,23 @@ main {
 
 main table {
 	border: 3px solid black;
-	padding: 1em;
+	padding: 2em;
+}
+
+table tr {
+	border: 1px solid black;
+}
+
+table th,
+td {
+	padding: 5px 15px;
+	border: 1px solid black;
 }
 
 h2 {
 	margin: 10px 0;
 }
+
 //
 // Delete to here / Change with new framework
 //
@@ -61,7 +72,6 @@ h2 {
 .type-size-xl {
 	font-size: calc($base-font * 2);
 }
-
 .type-size-2xl {
 	font-size: calc($base-font * 2.43);
 }
