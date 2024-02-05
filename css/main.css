@@ -81,5 +81,84 @@ meter {
 }
 
 /* End of Reset CSS */
+body {
+  font-size: 16px;
+  padding: 1em;
+}
+
+main {
+  display: flex;
+  gap: 10px;
+}
+
+main div {
+  border: 3px solid black;
+  padding: 1em;
+}
+
+h2 {
+  text-decoration: underline;
+  margin: 10px 0;
+}
+
+.type-weight-light {
+  font-weight: 100;
+}
+
+.type-weight-normal {
+  font-weight: 500;
+}
+
+.type-weight-bold {
+  font-weight: 700;
+}
+
+.type-weight-extra-bold {
+  font-weight: 800;
+}
+
+.type-weight-black {
+  font-weight: 900;
+}
+
+.type-size-sm {
+  font-size: 16px;
+}
+
+.type-size-md {
+  font-size: 19.68px;
+}
+
+.type-size-lg {
+  font-size: 27.2px;
+}
+
+.type-size-xl {
+  font-size: 32px;
+}
+
+.type-size-2xl {
+  font-size: 38.88px;
+}
+
+.type-size-3xl {
+  font-size: 44.8px;
+}
+
+.type-size-4xl {
+  font-size: 48px;
+}
+
+.type-size-5xl {
+  font-size: 57.6px;
+}
+
+.type-italic {
+  font-style: italic;
+}
+
+.type-italic-normal {
+  font-style: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
