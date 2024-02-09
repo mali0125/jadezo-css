@@ -1,24 +1,86 @@
-// Cluster A section
-// Color
+@use 'variables';
 
-.color {
+// Mixin for font styles
+@mixin font-style($size, $weight: variables.$font-weight-normal) {
+	font-size: variables.$base-font;
+	font-weight: variables.$font-weight-normal;
 }
 
-// Background color
-
-.bg {
+// Utility classes for colors
+.text-primary {
+	color: variables.$primary-color;
+}
+.text-secondary {
+	color: variables.$secondary-color;
+}
+.text-success {
+	color: variables.$success-color;
+}
+.text-info {
+	color: variables.$info-color;
+}
+.text-warning {
+	color: variables.$warning-color;
+}
+.text-error {
+	color: variables.$error-color;
+}
+.text-light {
+	color: variables.$light-color;
+}
+.text-dark {
+	color: variables.$dark-color;
 }
 
-// Strong
+// Utility classes for background colors
+.bg-primary {
+	background-color: variables.$primary-color;
+}
+.bg-secondary {
+	background-color: variables.$secondary-color;
+}
+.bg-success {
+	background-color: variables.$success-color;
+}
+.bg-info {
+	background-color: variables.$info-color;
+}
+.bg-warning {
+	background-color: variables.$warning-color;
+}
+.bg-error {
+	background-color: variables.$error-color;
+}
+.bg-light {
+	background-color: variables.$light-color;
+}
+.bg-dark {
+	background-color: variables.$dark-color;
+}
 
+// Utility classes for font weight
+.font-normal {
+	font-weight: variables.$font-weight-normal;
+}
+.font-bold {
+	font-weight: variables.$font-weight-bold;
+}
+
+// Utility classes for font sizes
+.font-lg {
+	@include font-style(variables.$font-size-lg);
+}
+.font-sm {
+	@include font-style(variables.$font-size-sm);
+}
+.font-xs {
+	@include font-style(variables.$font-size-xs);
+}
+
+// Strong and emphasis styles
 .strong {
+	@include font-style(variables.$font-size-base, variables.$font-weight-bold);
 }
-// Emphasis
-
-.emp {
+.emphasis {
+	font-style: italic;
 }
-// Font weight
-
-// Font size
-
-// Cluster B section

@@ -1,0 +1,33 @@
+$base-font-size: 1rem;
+
+// Color palette
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$error-color: #dc3545;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+$link-color: $primary-color;
+
+// Font sizes
+$font-size-base: $base-font-size; // 1rem (16px)
+$font-size-lg: 1.25rem; // Large font size
+$font-size-sm: 0.875rem; // Small font size
+$font-size-xs: 0.75rem; // Extra small font size
+
+// Font weights
+$font-weight-light: 100;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+$hover-brightness-adjustment: 15%;
+
+@mixin hover-effect($color) {
+	&:hover {
+		background-color: lighten($color, $hover-brightness-adjustment);
+	}
+}

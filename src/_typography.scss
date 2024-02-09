@@ -1,88 +1,48 @@
-// Variables
+@use 'variables';
 
-$base-font: 16px;
-
-//
-// Delete Below
-//
-
-body {
-	font-size: $base-font;
-	padding: 1em;
-}
-
-main {
-	display: flex;
-	gap: 10px;
-}
-
-main table {
-	border: 3px solid black;
-	padding: 2em;
-}
-
-table tr {
-	border: 1px solid black;
-}
-
-table th,
-td {
-	padding: 5px 15px;
-	border: 1px solid black;
-}
-
-h2 {
-	margin: 10px 0;
-}
-
-//
-// Delete to here / Change with new framework
-//
-
-// Weight
 .type-weight-light {
-	font-weight: 100;
+	font-weight: variables.$font-weight-light;
 }
 .type-weight-normal {
-	font-weight: 500;
+	font-weight: variables.$font-weight-normal;
 }
 .type-weight-bold {
-	font-weight: 700;
+	font-weight: variables.$font-weight-bold;
 }
 .type-weight-extra-bold {
-	font-weight: 800;
+	font-weight: variables.$font-weight-extra-bold;
 }
 .type-weight-black {
-	font-weight: 900;
+	font-weight: variables.$font-weight-black;
 }
 
 // Size
 
 .type-size-sm {
-	font-size: $base-font;
+	font-size: variables.$base-font;
 }
 .type-size-md {
-	font-size: calc($base-font * 1.23);
+	font-size: calc(variables.$base-font * 1.23);
 }
 
 .type-size-lg {
-	font-size: calc($base-font * 1.7);
+	font-size: calc(variables.$base-font * 1.7);
 }
 
 .type-size-xl {
-	font-size: calc($base-font * 2);
+	font-size: calc(variables.$base-font * 2);
 }
 .type-size-2xl {
-	font-size: calc($base-font * 2.43);
+	font-size: calc(variables.$base-font * 2.43);
 }
 .type-size-3xl {
-	font-size: calc($base-font * 2.8);
+	font-size: calc(variables.$base-font * 2.8);
 }
 .type-size-4xl {
-	font-size: calc($base-font * 3);
+	font-size: calc(variables.$base-font * 3);
 }
 .type-size-5xl {
-	font-size: calc($base-font * 3.6);
+	font-size: calc(variables.$base-font * 3.6);
 }
 
 // Italics
@@ -93,4 +53,51 @@ h2 {
 
 .type-italic-normal {
 	font-style: normal;
+}
+
+// Line Height Utilities
+.type-line-tight {
+	line-height: 1.25;
+}
+.type-line-normal {
+	line-height: 1.5;
+}
+.type-line-loose {
+	line-height: 2;
+}
+
+// Letter Spacing
+.type-letter-tight {
+	letter-spacing: -0.5px;
+}
+.type-letter-normal {
+	letter-spacing: 0;
+}
+.type-letter-wide {
+	letter-spacing: 1px;
+}
+
+// Text Transform
+.type-uppercase {
+	text-transform: uppercase;
+}
+.type-lowercase {
+	text-transform: lowercase;
+}
+.type-capitalize {
+	text-transform: capitalize;
+}
+
+// Text Alignment
+.type-align-left {
+	text-align: left;
+}
+.type-align-center {
+	text-align: center;
+}
+.type-align-right {
+	text-align: right;
+}
+.type-align-justify {
+	text-align: justify;
 }

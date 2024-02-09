@@ -1,173 +1,19 @@
-/* The new CSS reset - version 1.11.2 (last updated 15.11.2023) GitHub page: https://github.com/elad2412/the-new-css-reset */
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 5 |     font-size: variables.$base-font;
+ *   |                ^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\_utilities.scss 5:13  font-style()
+ *   src\_utilities.scss 71:2  @use
+ *   src\main.scss 4:1         root stylesheet */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-a, button {
-  cursor: revert;
-}
-
-ol, ul, menu, summary {
-  list-style: none;
-}
-
-img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-input, textarea {
-  -webkit-user-select: auto;
-}
-
-textarea {
-  white-space: revert;
-}
-
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-
-:where(pre) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-::placeholder {
-  color: unset;
-}
-
-:where([hidden]) {
-  display: none;
-}
-
-:where([contenteditable]:not([contenteditable=false])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-
-:where([draggable=true]) {
-  -webkit-user-drag: element;
-}
-
-:where(dialog:modal) {
-  all: revert;
-  box-sizing: border-box;
-}
-
-::-webkit-details-marker {
-  display: none;
-}
-
-/* End of Reset CSS */
-body {
-  font-size: 16px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
   padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      font-size: variables.$base-font;\d\a   \2502                 ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\_utilities.scss 5:13  font-style()\a   src\\_utilities.scss 71:2  @use\a   src\\main.scss 4:1         root stylesheet";
 }
-
-main {
-  display: flex;
-  gap: 10px;
-}
-
-main table {
-  border: 3px solid black;
-  padding: 2em;
-}
-
-table tr {
-  border: 1px solid black;
-}
-
-table th,
-td {
-  padding: 5px 15px;
-  border: 1px solid black;
-}
-
-h2 {
-  margin: 10px 0;
-}
-
-.type-weight-light {
-  font-weight: 100;
-}
-
-.type-weight-normal {
-  font-weight: 500;
-}
-
-.type-weight-bold {
-  font-weight: 700;
-}
-
-.type-weight-extra-bold {
-  font-weight: 800;
-}
-
-.type-weight-black {
-  font-weight: 900;
-}
-
-.type-size-sm {
-  font-size: 16px;
-}
-
-.type-size-md {
-  font-size: 19.68px;
-}
-
-.type-size-lg {
-  font-size: 27.2px;
-}
-
-.type-size-xl {
-  font-size: 32px;
-}
-
-.type-size-2xl {
-  font-size: 38.88px;
-}
-
-.type-size-3xl {
-  font-size: 44.8px;
-}
-
-.type-size-4xl {
-  font-size: 48px;
-}
-
-.type-size-5xl {
-  font-size: 57.6px;
-}
-
-.type-italic {
-  font-style: italic;
-}
-
-.type-italic-normal {
-  font-style: normal;
-}
-
-/*# sourceMappingURL=main.css.map */

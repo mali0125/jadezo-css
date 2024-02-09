@@ -1,3 +1,6 @@
 // for @use statements only
 @use 'reset';
-@use 'typography'
+@use 'variables';
+@use 'utilities';
+@use 'typography';
+@use 'base';
