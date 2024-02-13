@@ -101,3 +101,7 @@
 .type-align-justify {
 	text-align: justify;
 }
+
+@mixin heading-styles($base-font) {
+	font-size: $base-font;
+}

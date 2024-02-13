@@ -77,6 +77,14 @@
 	@include font-style(variables.$font-size-xs);
 }
 
+.font-size-xl {
+	@include font-style(variables.$font-size-xl);
+}
+
+.font-size-2xl {
+	@include font-style(variables.$font-size-2xl);
+}
+
 // Strong and emphasis styles
 .strong {
 	@include font-style(variables.$font-size-base, variables.$font-weight-bold);
