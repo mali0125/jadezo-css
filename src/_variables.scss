@@ -1,3 +1,6 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+$font-stack: 'Montserrat', sans-serif;
 $base-font: 1rem;
 
 // Color palette
@@ -26,6 +29,17 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 $font-weight-black: 900;
+
+//Paddings & margins
+$section-margin-normal: 1.5rem 0;
+$section-margin-large: 2.5rem 0;
+$base-padding: 1.5rem;
+
+//Tables
+$table-content-padding: 0.5rem 1rem;
+
+//Borders
+$rounded-border: 0.25rem;
 
 $hover-brightness-adjustment: 15%;
 

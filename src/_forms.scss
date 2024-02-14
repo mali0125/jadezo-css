@@ -1,3 +1,14 @@
-// Cluster B section
+@use 'styles';
+@use 'variables';
 
+/* Form styles */
+
+// Cluster B section
+form {
+    @include styles.form (); 
+}
+
+select {
+    @include styles.select (); 
+}
 // Cluster C section

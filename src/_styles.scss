@@ -1,0 +1,88 @@
+@use 'variables';
+
+// Cluster C section
+
+@mixin li ($bullet-style: circle) {
+    list-style-type: $bullet-style;
+    list-style-position: inside;
+    text-indent: 20px;
+}
+
+@mixin dl ($theme-dl: none) {
+        text-indent: 20px;
+    dt {
+        font-weight: variables.$font-weight-bold;
+        color: $theme-dl;
+    }
+    // dd {
+    //     padding-bottom: 10px;
+    // }
+}
+
+@mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
+    //Cluster B- Changed the width and added margin to fit more content 
+    width: 70%;
+    border: 2px solid variables.$secondary-color;
+    margin: 1.5rem 0;
+    border-collapse: separate;
+    border-radius: variables.$rounded-border;
+    overflow: hidden;
+
+    th, td {
+        border: $table-border;
+        text-align: center;
+        vertical-align: middle;
+        padding: variables.$table-content-padding; 
+    }
+    th {
+        font-weight: variables.$font-weight-bold;
+        background-color: $table-bg-color;
+        color: $table-color;
+    }
+}
+
+
+@mixin form ($form-bg-color: none, $form-border: none) {
+    margin: 1.5rem 0;
+
+    fieldset {
+    width: 70%;
+    border: 2px solid variables.$secondary-color;
+    border-radius: variables.$rounded-border;
+    padding: variables.$base-padding;
+    }
+
+    legend {
+        padding: 10px;
+        text-align: center;
+    }
+
+    input,label,textarea {
+        box-sizing: border-box;
+        width: -webkit-fill-available;
+        margin: 0.5rem 0;
+    }
+
+    textarea {
+        border: 1px solid;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background-color: variables.$light-color;
+    }
+
+    label {
+        font-weight: variables.$font-weight-bold;
+    }
+}
+
+@mixin select ($background-color: none, $select-border: none) {
+        padding: 0 0.5rem;
+        border-radius: variables.$rounded-border;
+
+
+    option {
+        background-color: variables.$primary-color;
+        color: variables.$light-color;
+    }
+   
+}
