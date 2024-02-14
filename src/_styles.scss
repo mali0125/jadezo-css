@@ -1,0 +1,34 @@
+@use 'variables';
+
+// Cluster C section
+
+@mixin li ($bullet-style: circle) {
+    list-style-type: $bullet-style;
+    list-style-position: inside;
+    text-indent: 20px;
+}
+
+@mixin dl ($theme-dl: none) {
+        text-indent: 20px;
+    dt {
+        font-weight: variables.$font-weight-bold;
+        color: $theme-dl;
+    }
+    // dd {
+    //     padding-bottom: 10px;
+    // }
+}
+
+@mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
+    width: 50%;
+    border: 2px solid;
+    th, td {
+        border: $table-border;
+        text-align: center;
+    }
+    th {
+        font-weight: variables.$font-weight-bold;
+        background-color: $table-bg-color;
+        color: $table-color;
+    }
+}
