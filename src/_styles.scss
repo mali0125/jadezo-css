@@ -8,6 +8,24 @@
     text-indent: 20px;
 }
 
+
+@mixin dl ($theme-dl: none) {
+        text-indent: 20px;
+    dt {
+        font-weight: variables.$font-weight-bold;
+        color: $theme-dl;
+    }
+    // dd {
+    //     padding-bottom: 10px;
+    // }
+}
+
+@mixin li ($bullet-style: circle) {
+    list-style-type: $bullet-style;
+    list-style-position: inside;
+    text-indent: 20px;
+}
+
 @mixin dl ($theme-dl: none) {
         text-indent: 20px;
     dt {
@@ -20,43 +38,23 @@
 }
 
 @mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
-
-    width: 50%;
+    width: 70%;
     border: 2px solid;
     th, td {
         border: $table-border;
         text-align: center;
-
-    //Cluster B- Changed the width and added margin to fit more content 
-    width: 70%;
-    border: 2px solid variables.$secondary-color;
-    margin: 1.5rem 0;
-    border-collapse: separate;
-    border-radius: variables.$rounded-border;
-    overflow: hidden;
-
-    th, td {
-        border: $table-border;
-        text-align: center;
-        vertical-align: middle;
-        padding: variables.$table-content-padding; 
-
     }
     th {
         font-weight: variables.$font-weight-bold;
         background-color: $table-bg-color;
         color: $table-color;
     }
-
-}
-
 }
 
 
 @mixin form () {
     margin: 1.5rem 0;
 
-    
     fieldset {
     padding: variables.$base-padding;
     display: flex;
@@ -67,9 +65,9 @@
     input, textarea {
         box-sizing: border-box;
         border: variables.$thin-border;
+        border-radius: variables.$rounded-border;
         margin: 0.5rem 0;
         background-color: variables.$light-color;
-        border-radius: variables.$rounded-border;
         all: revert;
 
     }
@@ -81,6 +79,8 @@
         border: 1px solid;
         padding: 1rem;
         background-color: variables.$light-color;
+        border-radius: variables.$rounded-border;
+
     }
 
     label {
@@ -97,5 +97,3 @@
 
     }
 }
-
-

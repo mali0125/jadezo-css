@@ -8,7 +8,7 @@ form {
     @include styles.form (); 
 
     legend {
-        font-size: variables.$font-size-lg
+        font-size: variables.$font-size-lg;
     }
 }
 
@@ -45,26 +45,4 @@ form {
 
     }
 
-}
-
-// Cluster C section
-
-fieldset {
-    border: 2px solid;
-    width: 50%;
-    legend {
-        padding: 10px;
-        text-align: center;
-    }
-    input,label,textarea {
-        margin-left: 20px;
-    }
-    textarea {
-        border: 1px solid;
-        width: 50%;
-    }
-}
-
-label {
-    font-weight: variables.$font-weight-bold;
 }
