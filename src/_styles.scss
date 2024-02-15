@@ -20,6 +20,13 @@
 }
 
 @mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
+
+    width: 50%;
+    border: 2px solid;
+    th, td {
+        border: $table-border;
+        text-align: center;
+
     //Cluster B- Changed the width and added margin to fit more content 
     width: 70%;
     border: 2px solid variables.$secondary-color;
@@ -33,12 +40,16 @@
         text-align: center;
         vertical-align: middle;
         padding: variables.$table-content-padding; 
+
     }
     th {
         font-weight: variables.$font-weight-bold;
         background-color: $table-bg-color;
         color: $table-color;
     }
+
+}
+
 }
 
 
@@ -86,4 +97,5 @@
 
     }
 }
+
 

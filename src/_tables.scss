@@ -1,7 +1,18 @@
+@use 'styles';
+@use 'variables';
+
+/* Table styles */
+
 // Cluster B section
 @use 'variables';
 @use 'typography';
 @use 'styles';
+
+
+// Cluster C section
+
+table {
+    @include styles.table ($table-border: 1px solid); 
 
 
 /* Table styles */
@@ -11,6 +22,7 @@
 
 table {
     @include styles.table ($table-border: 1px solid variables.$secondary-color); 
+
 }
 
 .table-style-a {

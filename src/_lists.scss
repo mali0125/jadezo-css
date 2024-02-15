@@ -1,0 +1,47 @@
+@use 'styles';
+@use 'variables';
+
+/* Unordered List Styles */
+
+ul {
+    @include styles.li;
+}
+
+.ul-style-a {
+    @include styles.li ($bullet-style: disc);
+}
+
+.ul-style-b {
+    @include styles.li ($bullet-style: square);
+}
+
+/* Ordered List Styles */
+
+ol {
+    @include styles.li ($bullet-style: decimal);
+}
+
+.ol-style-a {
+    @include styles.li ($bullet-style: upper-latin);
+}
+
+.ol-style-b {
+    @include styles.li ($bullet-style: lower-latin);
+}
+
+/* Description List Styles */
+
+dl {
+    @include styles.dl; 
+}
+
+.dl-style-a {
+    @include styles.dl;
+    dt {
+        text-decoration: underline;
+    }
+}
+
+.dl-style-b {
+    @include styles.dl ($theme-dl: variables.$primary-color);
+}
