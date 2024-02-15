@@ -42,30 +42,32 @@
 }
 
 
-@mixin form ($form-bg-color: none, $form-border: none) {
+@mixin form () {
     margin: 1.5rem 0;
 
+    
     fieldset {
-    width: 70%;
-    border: 2px solid variables.$secondary-color;
-    border-radius: variables.$rounded-border;
     padding: variables.$base-padding;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
     }
 
-    legend {
-        padding: 10px;
-        text-align: center;
-    }
-
-    input,label,textarea {
+    input, textarea {
         box-sizing: border-box;
-        width: -webkit-fill-available;
+        border: variables.$thin-border;
         margin: 0.5rem 0;
+        background-color: variables.$light-color;
+        border-radius: variables.$rounded-border;
+        all: revert;
+
+    }
+    input:checked {
+        border: 2px solid variables.$primary-color;
     }
 
     textarea {
         border: 1px solid;
-        border-radius: 0.5rem;
         padding: 1rem;
         background-color: variables.$light-color;
     }
@@ -73,16 +75,15 @@
     label {
         font-weight: variables.$font-weight-bold;
     }
-}
 
-@mixin select ($background-color: none, $select-border: none) {
+    select {
         padding: 0 0.5rem;
+        border: variables.$thin-border;
         border-radius: variables.$rounded-border;
+        color: variables.$dark-color; 
+        width: 100%;
+        margin: 0.5rem 0;
 
-
-    option {
-        background-color: variables.$primary-color;
-        color: variables.$light-color;
     }
-   
 }
+

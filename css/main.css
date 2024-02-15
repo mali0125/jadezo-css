@@ -378,6 +378,8 @@ button {
   font-size: 1rem;
   line-height: 1.5;
   transition: background-color 0.15s ease-in-out;
+  margin: 1rem 0;
+  text-align: center;
 }
 button.btn-primary {
   background-color: #007bff;
@@ -472,37 +474,135 @@ form {
   margin: 1.5rem 0;
 }
 form fieldset {
-  width: 70%;
-  border: 2px solid #6c757d;
-  border-radius: 0.25rem;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
-form legend {
-  padding: 10px;
-  text-align: center;
-}
-form input, form label, form textarea {
+form input, form textarea {
   box-sizing: border-box;
-  width: -webkit-fill-available;
+  border: 1px solid #6c757d;
   margin: 0.5rem 0;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  all: revert;
+}
+form input:checked {
+  border: 2px solid #007bff;
 }
 form textarea {
   border: 1px solid;
-  border-radius: 0.5rem;
   padding: 1rem;
   background-color: #f8f9fa;
 }
 form label {
   font-weight: 700;
 }
-
-select {
+form select {
   padding: 0 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  color: #343a40;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+form legend {
+  font-size: 1.25rem;
+}
+
+.form-style-a {
+  margin: 1.5rem 0;
+}
+.form-style-a fieldset {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.form-style-a input, .form-style-a textarea {
+  box-sizing: border-box;
+  border: 1px solid #6c757d;
+  margin: 0.5rem 0;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  all: revert;
+}
+.form-style-a input:checked {
+  border: 2px solid #007bff;
+}
+.form-style-a textarea {
+  border: 1px solid;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+.form-style-a label {
+  font-weight: 700;
+}
+.form-style-a select {
+  padding: 0 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  color: #343a40;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.form-style-a fieldset {
+  border: 2px solid #6c757d;
   border-radius: 0.25rem;
 }
-select option {
-  background-color: #007bff;
+.form-style-a legend {
+  text-align: center;
+  padding: 10px;
+}
+
+.form-style-b {
+  margin: 1.5rem 0;
+}
+.form-style-b fieldset {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.form-style-b input, .form-style-b textarea {
+  box-sizing: border-box;
+  border: 1px solid #6c757d;
+  margin: 0.5rem 0;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  all: revert;
+}
+.form-style-b input:checked {
+  border: 2px solid #007bff;
+}
+.form-style-b textarea {
+  border: 1px solid;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+.form-style-b label {
+  font-weight: 700;
+}
+.form-style-b select {
+  padding: 0 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  color: #343a40;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.form-style-b fieldset {
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  background-color: #343a40;
   color: #f8f9fa;
+}
+.form-style-b legend {
+  text-align: center;
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 10px;
+  border-radius: 0.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

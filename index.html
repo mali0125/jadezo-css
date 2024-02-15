@@ -308,8 +308,11 @@
         <!-- Forms -->
         <section>
             <h2 class="type-weight-bold type-size-lg">Forms</h2>
+
+			<h2>Default Form</h2>
             <form>
                 <fieldset>
+					<h3>Text input fields</h3>
                     <legend>Contact Info</legend>
                     <label for="name">Name</label>
                     <br>
@@ -323,35 +326,60 @@
                     <br>
                     <textarea id="comments"></textarea>
                     <br>
+
+					<h3>Dropdown</h3>
+					<label for="fruit">Pick a fruit:</label>
+					<select id="fruit">
+						<option value="oranges">oranges</option>
+						<option value="apples">apples</option>
+						<option value="bananas">bananas</option>
+						<option value="grapes">grapes</option>
+					</select>
+
                     <button type="submit" value="Submit" class="btn-primary">Submit response</button>
+
+					
                 </fieldset>
             </form>
-            <h2>Dropdown</h2>
-            <label for="fruit">Pick a fruit:</label>
-            <select id="fruit">
-                <option value="oranges">oranges</option>
-                <option value="apples">apples</option>
-                <option value="bananas">bananas</option>
-                <option value="grapes">grapes</option>
-            </select>
-            <h2>Radio Buttons</h2>
-            <form>
-                <input type="radio" id="radio-a" name="radio" value="first-option">
-                <label for="a">First option</label>
-                <input type="radio" id="radio-b" name="radio" value="second-option">
-                <label for="b">Second option</label>
-                <input type="radio" id="radio-c" name="radio" value="third-option">
-                <label for="c">Third option</label>
+
+			<h2>Form Style A</h2>
+            <form class="form-style-a">
+				<fieldset>
+					<h3>Radio Buttons</h2>
+
+					<legend>Select a plan</legend>
+					<input type="radio" id="radio-a" name="radio" value="free">
+					<label for="a">Free</label>
+					<input type="radio" id="radio-b" name="radio" value="pro">
+					<label for="b">Pro</label>
+					<input type="radio" id="radio-c" name="radio" value="ultra">
+					<label for="c">Ultra</label>
+
+					<button type="submit" value="Submit" class="btn-primary">Submit response</button>
+
+				</fieldset>
             </form>
-            <h2>Checkboxes</h2>
-            <form>
-                <input type="checkbox" id="checkbox-a" name="checkbox-a" value="first-option">
-                <label for="a">First option</label>
-                <input type="checkbox" id="checkbox-b" name="checkbox-b" value="second-option">
-                <label for="b">Second option</label>
-                <input type="checkbox" id="checkbox-c" name="checkbox-c" value="third-option">
-                <label for="c">Third option</label>
-				<button class="btn-primary">This is my favourite fruit!</button>
+
+
+			<h2>Form Style B</h2>			 
+            <form class="form-style-b">
+				<fieldset>
+					<h3>Checkboxes</h3>
+					<legend>Choose your interests</legend>
+					<div>
+					  <input type="checkbox" id="coding" name="interest" value="coding" />
+					  <label for="coding">Coding</label>
+					</div>
+					<div>
+					  <input type="checkbox" id="music" name="interest" value="music" />
+					  <label for="music">Music</label>
+					</div>
+
+					<button type="submit" value="Submit" class="btn-primary">Submit response</button>
+
+				  </fieldset>
+				  
+
             </form>
         </section>
     </main>
