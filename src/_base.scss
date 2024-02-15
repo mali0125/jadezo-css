@@ -14,9 +14,7 @@ main {
 
 section {
 	margin: variables.$section-margin-normal;
-
 }
-
 
 //Header
 header {
@@ -68,12 +66,98 @@ blockquote {
 	border-left: 0.25rem solid variables.$primary-color;
 }
 
+@mixin blockquote-font-style($size: 1em, $lineHeight: 1.5) {
+	font-size: $size;
+	line-height: $lineHeight;
+}
+
+@mixin blockquote-border($color) {
+	border-left: 4px solid $color;
+}
+
+.blockquote-primary {
+	@include blockquote-font-style(1.25em);
+	@include blockquote-border(variables.$primary-color);
+	padding: 1em;
+	color: variables.$primary-color;
+	background-color: lighten(variables.$primary-color, 40%);
+}
+
+.blockquote-secondary {
+	@include blockquote-font-style(1.1em);
+	@include blockquote-border(variables.$secondary-color);
+	padding: 0.75em 1em;
+	color: variables.$secondary-color;
+	background-color: lighten(variables.$secondary-color, 45%);
+}
+
+.blockquote-success {
+	@include blockquote-font-style(1em);
+	@include blockquote-border(variables.$success-color);
+	padding: 0.5em 1.5em;
+	color: variables.$success-color;
+	background-color: lighten(variables.$success-color, 50%);
+}
+
+.blockquote-warning {
+	@include blockquote-font-style(1.2em);
+	@include blockquote-border(variables.$warning-color);
+	padding: 1em;
+	position: relative;
+	color: variables.$warning-color;
+	background-color: lighten(variables.$warning-color, 50%);
+}
+
+.blockquote-error {
+	@include blockquote-font-style(1.1em);
+	@include blockquote-border(variables.$error-color);
+	padding: 0.75em 1em;
+	color: variables.$error-color;
+	background-color: lighten(variables.$error-color, 45%);
+}
+
+.blockquote-info {
+	@include blockquote-font-style(1em);
+	@include blockquote-border(variables.$info-color);
+	padding: 0.5em 1.5em;
+	color: variables.$info-color;
+	background-color: lighten(variables.$info-color, 50%);
+}
+
+.blockquote-light {
+	@include blockquote-font-style(1em);
+	@include blockquote-border(variables.$light-color);
+	padding: 0.5em 1.5em;
+	color: variables.$dark-color;
+	background-color: variables.$light-color;
+}
+
+.blockquote-dark {
+	@include blockquote-font-style(1em, 1.4);
+	@include blockquote-border(variables.$dark-color);
+	padding: 1em;
+	font-style: italic;
+	color: variables.$color-white;
+	background-color: lighten(variables.$dark-color, 40%);
+}
+
 // Image styles
 img {
 	max-width: 100%;
 	height: auto;
 }
 
+@mixin hover-effect($backgroundColor, $borderColor, $darkenAmount: 10%) {
+	&:hover {
+		background-color: darken($backgroundColor, $darkenAmount);
+		border-color: darken($borderColor, $darkenAmount);
+	}
+	&:focus,
+	&:active {
+		background-color: darken($backgroundColor, $darkenAmount + 5%);
+		border-color: darken($borderColor, $darkenAmount + 5%);
+	}
+}
 // Button styles
 button {
 	padding: 0.375rem 0.75rem;
@@ -86,15 +170,81 @@ button {
 	text-align: center;
 
 	&.btn-primary {
+		cursor: pointer;
 		background-color: variables.$primary-color;
 		color: variables.$color-white;
-		@include variables.hover-effect(
-			variables.$primary-color
-		); // Corrected reference
+		border-color: variables.$primary-color;
+		@include hover-effect(variables.$primary-color, variables.$primary-color);
+	}
+
+	&.btn-secondary {
+		cursor: pointer;
+		background-color: variables.$secondary-color;
+		color: variables.$color-white;
+		border-color: variables.$secondary-color;
+		@include hover-effect(
+			variables.$secondary-color,
+			variables.$secondary-color
+		);
+	}
+
+	&.btn-success {
+		cursor: pointer;
+		background-color: variables.$success-color;
+		color: variables.$color-white;
+		border-color: variables.$success-color;
+		@include hover-effect(variables.$success-color, variables.$success-color);
+	}
+
+	&.btn-info {
+		cursor: pointer;
+		background-color: variables.$info-color;
+		color: variables.$color-white;
+		border-color: variables.$info-color;
+		@include hover-effect(variables.$info-color, variables.$info-color);
+	}
+
+	&.btn-warning {
+		cursor: pointer;
+		background-color: variables.$warning-color;
+		color: variables.$dark-color;
+		border-color: variables.$warning-color;
+		@include hover-effect(variables.$warning-color, variables.$warning-color);
+	}
+
+	&.btn-error {
+		cursor: pointer;
+		background-color: variables.$error-color;
+		color: variables.$color-white;
+		border-color: variables.$error-color;
+		@include hover-effect(variables.$error-color, variables.$error-color);
+	}
+
+	&.btn-light {
+		cursor: pointer;
+		background-color: variables.$light-color;
+		color: variables.$dark-color;
+		border-color: variables.$light-color;
+		@include hover-effect(variables.$light-color, variables.$light-color);
+	}
+
+	&.btn-dark {
+		cursor: pointer;
+		background-color: variables.$dark-color;
+		color: variables.$color-white;
+		border-color: variables.$dark-color;
+		@include hover-effect(variables.$dark-color, variables.$dark-color);
 	}
 }
 
-// Link styles
+@mixin link-hover-effect($color, $hoverColor) {
+	&:hover,
+	&:focus {
+		color: $hoverColor;
+		text-decoration: underline;
+	}
+}
+
 a {
 	color: variables.$link-color;
 	text-decoration: none;
@@ -104,8 +254,70 @@ a {
 	}
 }
 
-// Navigation styles
-nav a {
-	display: inline-block;
-	margin-right: 1rem;
+a {
+	transition: color 0.15s ease-in-out;
+
+	&.link-primary {
+		color: variables.$primary-color;
+		@include link-hover-effect(
+			variables.$primary-color,
+			darken(variables.$primary-color, 15%)
+		);
+	}
+
+	&.link-secondary {
+		color: variables.$secondary-color;
+		@include link-hover-effect(
+			variables.$secondary-color,
+			darken(variables.$secondary-color, 15%)
+		);
+	}
+
+	&.link-success {
+		color: variables.$success-color;
+		@include link-hover-effect(
+			variables.$success-color,
+			darken(variables.$success-color, 15%)
+		);
+	}
+
+	&.link-info {
+		color: variables.$info-color;
+		@include link-hover-effect(
+			variables.$info-color,
+			darken(variables.$info-color, 15%)
+		);
+	}
+
+	&.link-warning {
+		color: variables.$warning-color;
+		@include link-hover-effect(
+			variables.$warning-color,
+			darken(variables.$warning-color, 15%)
+		);
+	}
+
+	&.link-error {
+		color: variables.$error-color;
+		@include link-hover-effect(
+			variables.$error-color,
+			darken(variables.$error-color, 15%)
+		);
+	}
+
+	&.link-light {
+		color: variables.$light-color;
+		@include link-hover-effect(
+			variables.$light-color,
+			darken(variables.$light-color, 15%)
+		);
+	}
+
+	&.link-dark {
+		color: variables.$dark-color;
+		@include link-hover-effect(
+			variables.$dark-color,
+			darken(variables.$dark-color, 15%)
+		);
+	}
 }
