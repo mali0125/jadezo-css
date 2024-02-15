@@ -68,4 +68,28 @@ For font sizes:
 
 Emphasize text using `.strong` for bold and `.emphasis` for italic text. These classes make it easy to highlight parts of your text.
 
-## Customization
+### Buttons
+
+Create interactive and visually appealing buttons by applying these classes:
+
+- **Primary Button:** `btn-primary` - Use for main actions.
+- **Secondary Button:** `btn-secondary` - Use for alternative actions.
+- **Success Button:** `btn-success` - Use for successful actions.
+- **Info Button:** `btn-info` - Use for informational buttons.
+- **Warning Button:** `btn-warning` - Use for warnings or cautionary actions.
+- **Error Button:** `btn-error` - Use for error-related actions.
+- **Light Button:** `btn-light` - Use for light-themed buttons.
+- **Dark Button:** `btn-dark` - Use for dark-themed buttons.
+
+### Blockquotes
+
+Enhance the presentation of quotes or highlighted text with these styles:
+
+- **Primary Blockquote:** .blockquote-primary - Use for important quotes.
+- **Secondary Blockquote:** .blockquote-secondary - For secondary emphasis.
+- **Success Blockquote:** .blockquote-success - Highlights success or positive quotes.
+- **Warning Blockquote:** .blockquote-warning - Use for cautionary or warning quotes.
+- **Error Blockquote:** .blockquote-error - For error or critical messages.
+- **Info Blockquote:** .blockquote-info - For informational content.
+- **Light Blockquote:** .blockquote-light - Light-themed for dark backgrounds.
+- **Dark Blockquote:** .blockquote-dark - Dark-themed for contrast on light backgrounds.
