@@ -14,15 +14,15 @@ table {
 }
 
 .table-style-a {
-    @include styles.table ($table-bg-color: variables.$dark-color, $table-color: variables.$color-white);
-        tr:nth-child(even) {
-            background-color: lighten(variables.$dark-color, 60%);
-        } 
-}
-
-.table-style-b {
     @include styles.table ($table-bg-color: variables.$primary-color, $table-color: variables.$color-white); 
         tr {
             background-color: lighten(variables.$primary-color, 40%);
         }
+}
+
+.table-style-b {
+    @include styles.table ($table-bg-color: variables.$dark-color, $table-color: variables.$color-white);
+        tr:nth-child(even) {
+            background-color: lighten(variables.$dark-color, 60%);
+        } 
 }
