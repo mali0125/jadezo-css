@@ -402,20 +402,80 @@ nav a {
   margin-right: 1rem;
 }
 
+/* Unordered List Styles */
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+.ul-style-a {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+.ul-style-b {
+  list-style-type: square;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+/* Ordered List Styles */
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+.ol-style-a {
+  list-style-type: upper-latin;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+.ol-style-b {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  text-indent: 20px;
+}
+
+/* Description List Styles */
+dl {
+  text-indent: 20px;
+}
+dl dt {
+  font-weight: 700;
+  color: none;
+}
+
+.dl-style-a {
+  text-indent: 20px;
+}
+.dl-style-a dt {
+  font-weight: 700;
+  color: none;
+}
+.dl-style-a dt {
+  text-decoration: underline;
+}
+
+.dl-style-b {
+  text-indent: 20px;
+}
+.dl-style-b dt {
+  font-weight: 700;
+  color: #007bff;
+}
+
 /* Table styles */
 table {
   width: 70%;
-  border: 2px solid #6c757d;
-  margin: 1.5rem 0;
-  border-collapse: separate;
-  border-radius: 0.25rem;
-  overflow: hidden;
+  border: 2px solid;
 }
 table th, table td {
   border: 1px solid #6c757d;
   text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem 1rem;
 }
 table th {
   font-weight: 700;
@@ -425,17 +485,11 @@ table th {
 
 .table-style-a {
   width: 70%;
-  border: 2px solid #6c757d;
-  margin: 1.5rem 0;
-  border-collapse: separate;
-  border-radius: 0.25rem;
-  overflow: hidden;
+  border: 2px solid;
 }
 .table-style-a th, .table-style-a td {
   border: none;
   text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem 1rem;
 }
 .table-style-a th {
   font-weight: 700;
@@ -448,17 +502,11 @@ table th {
 
 .table-style-b {
   width: 70%;
-  border: 2px solid #6c757d;
-  margin: 1.5rem 0;
-  border-collapse: separate;
-  border-radius: 0.25rem;
-  overflow: hidden;
+  border: 2px solid;
 }
 .table-style-b th, .table-style-b td {
   border: none;
   text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem 1rem;
 }
 .table-style-b th {
   font-weight: 700;
@@ -603,6 +651,26 @@ form legend {
   color: #f8f9fa;
   padding: 10px;
   border-radius: 0.25rem;
+}
+
+fieldset {
+  border: 2px solid;
+  width: 50%;
+}
+fieldset legend {
+  padding: 10px;
+  text-align: center;
+}
+fieldset input, fieldset label, fieldset textarea {
+  margin-left: 20px;
+}
+fieldset textarea {
+  border: 1px solid;
+  width: 50%;
+}
+
+label {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
