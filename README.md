@@ -23,7 +23,7 @@ With Jadezo CSS, you can easily customize the appearance of text on your website
 - **Text Transform:** `type-[uppercase, lowercase, capitalize]`
 - **Text Alignment:** `type-align-[left, center, right, justify]`
 
-## Text Colors
+### Text Colors
 
 Apply color to your text using these utility classes:
 
@@ -36,7 +36,7 @@ Apply color to your text using these utility classes:
 - **Light:** `.text-light` - Use for light text on dark backgrounds.
 - **Dark:** `.text-dark` - Use for dark text on light backgrounds.
 
-## Background Colors
+### Background Colors
 
 To set background colors, use the following classes:
 
@@ -49,7 +49,7 @@ To set background colors, use the following classes:
 - **Light:** `.bg-light`
 - **Dark:** `.bg-dark`
 
-## Font Weight and Sizes
+### Font Weight and Sizes
 
 For font weight:
 
@@ -64,7 +64,7 @@ For font sizes:
 - **Extra Large (xl):** `.font-size-xl`
 - **2x Extra Large (2xl):** `.font-size-2xl`
 
-## Strong and Emphasis Styles
+### Strong and Emphasis Styles
 
 Emphasize text using `.strong` for bold and `.emphasis` for italic text. These classes make it easy to highlight parts of your text.
 
