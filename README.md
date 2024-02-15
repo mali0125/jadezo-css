@@ -73,7 +73,7 @@ For font sizes:
 Emphasize text using `.strong` for bold and `.emphasis` for italic text. These classes make it easy to highlight parts of your text.
 
 ### Unordered List 
----
+
 Default: (no class to be specified)
 
 ![Default unordered list](images/ul-default.png) 
@@ -87,7 +87,7 @@ Style B: `.ul-style-b`
 ![Style B unordered list](images/ul-style-b.png) 
 
 ### Ordered List 
----
+
 Default: (no class to be specified) 
 
 ![Default ordered list](images/ol-default.png) 
@@ -101,7 +101,7 @@ Style B: `.ol-style-b`
 ![Style B ordered list](images/ol-style-b.png)
 
 ### Descriptive List 
----
+
 Default: (no class to be specified)
 
 ![Default descriptive list](images/dl-default.png)
@@ -115,7 +115,6 @@ Style B: `.dl-style-b`
 ![Style B descriptive list](images/dl-style-b.png)
 
 ### Tables 
----
 
 Default: (no class to be specified)
 
@@ -128,6 +127,5 @@ Style A: `.table-style-a`
 Style B: `.table-style-b`
 
 ![Style B table](images/table-style-b.png)
-
 
 ## Customization
