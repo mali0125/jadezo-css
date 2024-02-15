@@ -36,12 +36,12 @@ dl {
 }
 
 .dl-style-a {
+    @include styles.dl ($theme-dl: variables.$primary-color);
+}
+
+.dl-style-b {
     @include styles.dl;
     dt {
         text-decoration: underline;
     }
-}
-
-.dl-style-b {
-    @include styles.dl ($theme-dl: variables.$primary-color);
 }
