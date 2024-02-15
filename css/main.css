@@ -890,4 +890,24 @@ form legend {
   border-radius: 0.25rem;
 }
 
+fieldset {
+  border: 2px solid;
+  width: 50%;
+}
+fieldset legend {
+  padding: 10px;
+  text-align: center;
+}
+fieldset input, fieldset label, fieldset textarea {
+  margin-left: 20px;
+}
+fieldset textarea {
+  border: 1px solid;
+  width: 50%;
+}
+
+label {
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=main.css.map */
