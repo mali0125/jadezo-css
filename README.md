@@ -91,7 +91,7 @@ Create interactive and visually appealing buttons by applying these classes:
 
 ### Blockquotes
 
-![Blockquotes](images/blockquote.png)
+![Blockquotes](images/blockquotes.png)
 
 Enhance the presentation of quotes or highlighted text with these styles:
 
