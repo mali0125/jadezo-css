@@ -530,9 +530,9 @@ form fieldset {
 form input, form textarea {
   box-sizing: border-box;
   border: 1px solid #6c757d;
+  border-radius: 0.25rem;
   margin: 0.5rem 0;
   background-color: #f8f9fa;
-  border-radius: 0.25rem;
   all: revert;
 }
 form input:checked {
@@ -542,6 +542,7 @@ form textarea {
   border: 1px solid;
   padding: 1rem;
   background-color: #f8f9fa;
+  border-radius: 0.25rem;
 }
 form label {
   font-weight: 700;
@@ -570,9 +571,9 @@ form legend {
 .form-style-a input, .form-style-a textarea {
   box-sizing: border-box;
   border: 1px solid #6c757d;
+  border-radius: 0.25rem;
   margin: 0.5rem 0;
   background-color: #f8f9fa;
-  border-radius: 0.25rem;
   all: revert;
 }
 .form-style-a input:checked {
@@ -582,6 +583,7 @@ form legend {
   border: 1px solid;
   padding: 1rem;
   background-color: #f8f9fa;
+  border-radius: 0.25rem;
 }
 .form-style-a label {
   font-weight: 700;
@@ -615,9 +617,9 @@ form legend {
 .form-style-b input, .form-style-b textarea {
   box-sizing: border-box;
   border: 1px solid #6c757d;
+  border-radius: 0.25rem;
   margin: 0.5rem 0;
   background-color: #f8f9fa;
-  border-radius: 0.25rem;
   all: revert;
 }
 .form-style-b input:checked {
@@ -627,6 +629,7 @@ form legend {
   border: 1px solid;
   padding: 1rem;
   background-color: #f8f9fa;
+  border-radius: 0.25rem;
 }
 .form-style-b label {
   font-weight: 700;
