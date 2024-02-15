@@ -4,6 +4,48 @@
 /* Form styles */
 
 // Cluster B section
+form {
+    @include styles.form (); 
+
+    legend {
+        font-size: variables.$font-size-lg
+    }
+}
+
+.form-style-a {
+    @include styles.form (); 
+
+    fieldset{
+        border: variables.$thick-border;
+        border-radius: variables.$rounded-border;
+    }
+
+    legend {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.form-style-b {
+    @include styles.form (); 
+
+    fieldset{
+        border: variables.$thin-border;
+        border-radius: variables.$rounded-border;
+        background-color: variables.$dark-color;
+        color: variables.$light-color;
+    }
+
+    legend {
+        text-align: center;
+        background-color: variables.$dark-color;
+        color: variables.$light-color;
+        padding: 10px;
+        border-radius: variables.$rounded-border;
+
+    }
+
+}
 
 // Cluster C section
 
