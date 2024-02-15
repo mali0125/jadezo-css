@@ -19,37 +19,35 @@
     // }
 }
 
-@mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
+@mixin li ($bullet-style: circle) {
+    list-style-type: $bullet-style;
+    list-style-position: inside;
+    text-indent: 20px;
+}
 
-    width: 50%;
+@mixin dl ($theme-dl: none) {
+        text-indent: 20px;
+    dt {
+        font-weight: variables.$font-weight-bold;
+        color: $theme-dl;
+    }
+    // dd {
+    //     padding-bottom: 10px;
+    // }
+}
+
+@mixin table ($table-bg-color: none, $table-color: none, $table-border: none) {
+    width: 70%;
     border: 2px solid;
     th, td {
         border: $table-border;
         text-align: center;
-
-    //Cluster B- Changed the width and added margin to fit more content 
-    width: 70%;
-    border: 2px solid variables.$secondary-color;
-    margin: 1.5rem 0;
-    border-collapse: separate;
-    border-radius: variables.$rounded-border;
-    overflow: hidden;
-
-    th, td {
-        border: $table-border;
-        text-align: center;
-        vertical-align: middle;
-        padding: variables.$table-content-padding; 
-
     }
     th {
         font-weight: variables.$font-weight-bold;
         background-color: $table-bg-color;
         color: $table-color;
     }
-
-}
-
 }
 
 
