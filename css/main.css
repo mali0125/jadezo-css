@@ -688,10 +688,7 @@ dl dt {
 }
 .dl-style-a dt {
   font-weight: 700;
-  color: none;
-}
-.dl-style-a dt {
-  text-decoration: underline;
+  color: #007bff;
 }
 
 .dl-style-b {
@@ -699,7 +696,10 @@ dl dt {
 }
 .dl-style-b dt {
   font-weight: 700;
-  color: #007bff;
+  color: none;
+}
+.dl-style-b dt {
+  text-decoration: underline;
 }
 
 /* Table styles */
@@ -727,11 +727,11 @@ table th {
 }
 .table-style-a th {
   font-weight: 700;
-  background-color: #343a40;
+  background-color: #007bff;
   color: #f8f9fa;
 }
-.table-style-a tr:nth-child(even) {
-  background-color: #ced3d8;
+.table-style-a tr {
+  background-color: #cce5ff;
 }
 
 .table-style-b {
@@ -744,11 +744,11 @@ table th {
 }
 .table-style-b th {
   font-weight: 700;
-  background-color: #007bff;
+  background-color: #343a40;
   color: #f8f9fa;
 }
-.table-style-b tr {
-  background-color: #cce5ff;
+.table-style-b tr:nth-child(even) {
+  background-color: #ced3d8;
 }
 
 /* Form styles */
@@ -888,26 +888,6 @@ form legend {
   color: #f8f9fa;
   padding: 10px;
   border-radius: 0.25rem;
-}
-
-fieldset {
-  border: 2px solid;
-  width: 50%;
-}
-fieldset legend {
-  padding: 10px;
-  text-align: center;
-}
-fieldset input, fieldset label, fieldset textarea {
-  margin-left: 20px;
-}
-fieldset textarea {
-  border: 1px solid;
-  width: 50%;
-}
-
-label {
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 
 Developed by Zarmeen, Jesse, & Daniela
 
-## Description 
+## Description
 
 Jadezo CSS is a CSS framework that can be used to provide a simple and modern look to your website. Please consult the Installation, Usage, and Customization sections for more information.
 
@@ -56,11 +56,13 @@ To set background colors, use the following classes:
 ### Font Weight and Sizes
 
 For font weight:
+![Font Weight](images/weights.png)
 
 - **Normal:** `.font-normal`
 - **Bold:** `.font-bold`
 
 For font sizes:
+![Font Sizes](images/font-sizes.png)
 
 - **Large (lg):** `.font-lg`
 - **Small (sm):** `.font-sm`
@@ -72,25 +74,55 @@ For font sizes:
 
 Emphasize text using `.strong` for bold and `.emphasis` for italic text. These classes make it easy to highlight parts of your text.
 
-### Unordered List 
+### Buttons
+
+![Buttons](images/buttons.png)
+
+Create interactive and visually appealing buttons by applying these classes:
+
+- **Primary Button:** `btn-primary` - Use for main actions.
+- **Secondary Button:** `btn-secondary` - Use for alternative actions.
+- **Success Button:** `btn-success` - Use for successful actions.
+- **Info Button:** `btn-info` - Use for informational buttons.
+- **Warning Button:** `btn-warning` - Use for warnings or cautionary actions.
+- **Error Button:** `btn-error` - Use for error-related actions.
+- **Light Button:** `btn-light` - Use for light-themed buttons.
+- **Dark Button:** `btn-dark` - Use for dark-themed buttons.
+
+### Blockquotes
+
+![Blockquotes](images/blockquote.png)
+
+Enhance the presentation of quotes or highlighted text with these styles:
+
+- **Primary Blockquote:** `.blockquote-primary` - Use for important quotes.
+- **Secondary Blockquote:** `.blockquote-secondary` - For secondary emphasis.
+- **Success Blockquote:** `.blockquote-success` - Highlights success or positive quotes.
+- **Warning Blockquote:** `.blockquote-warning` - Use for cautionary or warning quotes.
+- **Error Blockquote:** `.blockquote-error` - For error or critical messages.
+- **Info Blockquote:** `.blockquote-info` - For informational content.
+- **Light Blockquote:** `.blockquote-light` - Light-themed for dark backgrounds.
+- **Dark Blockquote:** `.blockquote-dark` - Dark-themed for contrast on light backgrounds.
+
+### Unordered List
 
 Default: (no class to be specified)
 
-![Default unordered list](images/ul-default.png) 
+![Default unordered list](images/ul-default.png)
 
 Style A: `.ul-style-a`
 
-![Style A unordered list](images/ul-style-a.png) 
+![Style A unordered list](images/ul-style-a.png)
 
 Style B: `.ul-style-b`
 
-![Style B unordered list](images/ul-style-b.png) 
+![Style B unordered list](images/ul-style-b.png)
 
-### Ordered List 
+### Ordered List
 
-Default: (no class to be specified) 
+Default: (no class to be specified)
 
-![Default ordered list](images/ol-default.png) 
+![Default ordered list](images/ol-default.png)
 
 Style A: `.ol-style-a`
 
@@ -100,7 +132,7 @@ Style B: `.ol-style-b`
 
 ![Style B ordered list](images/ol-style-b.png)
 
-### Descriptive List 
+### Descriptive List
 
 Default: (no class to be specified)
 
@@ -114,7 +146,7 @@ Style B: `.dl-style-b`
 
 ![Style B descriptive list](images/dl-style-b.png)
 
-### Tables 
+### Tables
 
 Default: (no class to be specified)
 
