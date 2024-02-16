@@ -830,7 +830,7 @@ dl dt {
 /* Table styles */
 table {
   width: 70%;
-  border: 2px solid;
+  border: 2px solid #6c757d;
 }
 table th,
 table td {
@@ -845,7 +845,7 @@ table th {
 
 .table-style-a {
   width: 70%;
-  border: 2px solid;
+  border: 2px solid #6c757d;
 }
 .table-style-a th,
 .table-style-a td {
@@ -863,7 +863,7 @@ table th {
 
 .table-style-b {
   width: 70%;
-  border: 2px solid;
+  border: 2px solid #6c757d;
 }
 .table-style-b th,
 .table-style-b td {
