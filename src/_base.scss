@@ -321,6 +321,8 @@ a {
 		);
 	}
 }
+
+
 .nav-container {
 	padding: 1rem 10px;
 	text-align: center;
@@ -431,4 +433,41 @@ a {
 			color: lighten(variables.$dark-color, 20%);
 		}
 	}
+
+  
+#variables {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.rounded-borders {
+	border-radius: variables.$rounded-border;
+	border: variables.$thin-border;
+	text-align: center;
+	padding: variables.$base-padding;
+}
+
+.rounded-borders p {
+	margin: 0;
+}
+
+.thin-border {
+	border: variables.$thin-border;
+	text-align: center;
+	padding: variables.$base-padding;
+}
+
+.thin-border p{
+	margin: 0;
+}
+
+.thick-border {
+	border: variables.$thick-border;
+	text-align: center;
+	padding: variables.$base-padding;
+}
+
+.thick-border p{
+	margin: 0;
 }

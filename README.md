@@ -95,7 +95,7 @@ Create interactive and visually appealing buttons by applying these classes:
 
 ### Blockquotes
 
-![Blockquotes](images/blockquote.png)
+![Blockquotes](images/blockquotes.png)
 
 Enhance the presentation of quotes or highlighted text with these styles:
 
@@ -165,3 +165,41 @@ Style B: `.table-style-b`
 ![Style B table](images/table-style-b.png)
 
 ## Customization
+## Forms
+- **Default Form:** All its inner elements are set to be displayed in a column. Additionally, all inputs and text area boxes have a light background color for easier differentiation.
+![Default form](images/form-default.png) 
+
+- **Form Style A:** `.form-style-a` - This form was created for light themed apps. 
+![Form Style A](images/form-style-a.png) 
+
+- **Form Style B:** `.form-style-b` - This form was created for dark themed apps.
+![Form Style A](images/form-style-b.png) 
+
+
+# Customization
+
+## Layouts 
+The following CSS variables have been pre-created for uniform styling of elements.
+*Customize or override variables from the _variables.scss file.*
+
+### Borders
+- **No border** `$no-border` Removes border from an element setting it to none.
+
+- **Rounded borders:** `$rounded-border` - Adds a border radius of 0.25rem.
+![Rounded borders](images/rounded-borders.png) 
+
+- **Thin border line** `$thin-border` - Creates a thin border line.
+![Thin Border line](images/thin-border.png) 
+
+- **Thick border line** `$thick-border` - Creates a thicker border line.
+![Thick Border](images/thick-border.png) 
+
+*Note that borders are created using the secondary color*
+
+
+### Paddings & margins
+- **Basic margin** `$section-margin-normal` - Applies a margin on top and bottom of elements without affecting the side margin.
+- **Large margin** `$section-margin-large` - Applies a larger margin on top and bottom of elements without affecting the side margin.
+- **Basic padding** `$base-padding` - Applies a basic padding on all sides.
+- **Large Padding** `$large-padding` - Applies a larger padding on all sides. 
+- **Table content padding** `$table-content-padding` - Utilized to apply padding to the inner table content cells. The padding ratio is set to 0.5rem for the top and bottom and 1rem for the left and right.
