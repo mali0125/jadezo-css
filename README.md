@@ -12,9 +12,9 @@ To use Jadezo CSS in your project, follow these steps:
 
 1. **Create a Directory:** At your website's root level, create a directory titled `css`. Within this folder, create a `main.css` file.
 
-2. **Link the CSS File:** In your `index.html` file, link to the `main.css` file to include Jadezo CSS in your project.
+2. **Link the CSS File:** In the head of your `index.html` file, link the `main.css` file by adding this code: `<link rel="stylesheet" href="./css/main.css" />`
 
-3. **Compile SASS:** Use the following command: sass --watch ./src/main.scss ./css/main.css
+3. **Download Jadezo:** Add [Jadezo's CSS](css/main.css) to your project by copying it to the main.css file from step 1.
 
 ## Usage
 
@@ -110,6 +110,8 @@ Enhance the presentation of quotes or highlighted text with these styles:
 
 ### Unordered List
 
+To style your unordered list, please use the following classes:
+
 Default: (no class to be specified)
 
 ![Default unordered list](images/ul-default.png)
@@ -123,6 +125,8 @@ Style B: `.ul-style-b`
 ![Style B unordered list](images/ul-style-b.png)
 
 ### Ordered List
+
+To style your ordered list, please use the following classes:
 
 Default: (no class to be specified)
 
@@ -138,6 +142,8 @@ Style B: `.ol-style-b`
 
 ### Descriptive List
 
+To style your descriptive list, please use the following classes:
+
 Default: (no class to be specified)
 
 ![Default descriptive list](images/dl-default.png)
@@ -151,6 +157,8 @@ Style B: `.dl-style-b`
 ![Style B descriptive list](images/dl-style-b.png)
 
 ### Tables
+
+To style your tables, please use the following classes:
 
 Default: (no class to be specified)
 

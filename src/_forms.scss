@@ -3,7 +3,6 @@
 
 /* Form styles */
 
-// Cluster B section
 form {
     @include styles.form (); 
 
@@ -44,5 +43,4 @@ form {
         border-radius: variables.$rounded-border;
 
     }
-
 }

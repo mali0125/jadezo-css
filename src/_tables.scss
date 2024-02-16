@@ -4,10 +4,6 @@
 
 /* Table styles */
 
-// Cluster B section
-
-// Cluster C section
-
 table {
     @include styles.table ($table-border: 1px solid variables.$secondary-color); 
 
