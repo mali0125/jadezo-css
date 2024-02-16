@@ -636,6 +636,44 @@ a.link-dark:hover, a.link-dark:focus {
   text-decoration: underline;
 }
 
+#variables {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rounded-borders {
+  border-radius: 0.25rem;
+  border: 1px solid #6c757d;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.rounded-borders p {
+  margin: 0;
+}
+
+.thin-border {
+  border: 1px solid #6c757d;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.thin-border p {
+  margin: 0;
+}
+
+.thick-border {
+  border: 2px solid #6c757d;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.thick-border p {
+  margin: 0;
+}
+
 /* Unordered List Styles */
 ul {
   list-style-type: circle;
