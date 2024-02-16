@@ -323,6 +323,118 @@ a {
 }
 
 
+.nav-container {
+	padding: 1rem 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-item {
+	margin: 0 1rem;
+}
+
+.nav-link,
+.nav-brand {
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+	color: variables.$color-white;
+}
+
+.nav-primary {
+	background-color: variables.$primary-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$primary-color, 20%);
+		}
+	}
+}
+
+.nav-secondary {
+	background-color: variables.$secondary-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$secondary-color, 20%);
+		}
+	}
+}
+
+.nav-success {
+	background-color: variables.$success-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$success-color, 20%);
+		}
+	}
+}
+
+.nav-info {
+	background-color: variables.$info-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$info-color, 20%);
+		}
+	}
+}
+
+.nav-warning {
+	background-color: variables.$warning-color;
+
+	.nav-link,
+	.nav-brand {
+		color: variables.$dark-color;
+		&:hover,
+		&:focus {
+			color: lighten(variables.$warning-color, 20%);
+		}
+	}
+}
+
+.nav-error {
+	background-color: variables.$error-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$error-color, 20%);
+		}
+	}
+}
+
+.nav-dark {
+	background-color: variables.$dark-color;
+
+	.nav-link,
+	.nav-brand {
+		&:hover,
+		&:focus {
+			color: lighten(variables.$dark-color, 20%);
+		}
+	}
+
+  
 #variables {
 	width: 70%;
 	display: flex;

@@ -74,6 +74,10 @@ For font sizes:
 
 Emphasize text using `.strong` for bold and `.emphasis` for italic text. These classes make it easy to highlight parts of your text.
 
+## Navigation
+
+![Navigation](images/navigation.png)
+
 ### Buttons
 
 ![Buttons](images/buttons.png)
