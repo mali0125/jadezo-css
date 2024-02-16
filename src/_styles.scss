@@ -1,7 +1,5 @@
 @use 'variables';
 
-// Cluster C section
-
 @mixin li($bullet-style: circle) {
 	list-style-type: $bullet-style;
 	list-style-position: inside;
@@ -14,28 +12,11 @@
 		font-weight: variables.$font-weight-bold;
 		color: $theme-dl;
 	}
-}
-
-@mixin li($bullet-style: circle) {
-	list-style-type: $bullet-style;
-	list-style-position: inside;
-	text-indent: 20px;
-}
-
-@mixin dl($theme-dl: none) {
-	text-indent: 20px;
-	dt {
-		font-weight: variables.$font-weight-bold;
-		color: $theme-dl;
-	}
-	// dd {
-	//     padding-bottom: 10px;
-	// }
 }
 
 @mixin table($table-bg-color: none, $table-color: none, $table-border: none) {
 	width: 70%;
-	border: 2px solid;
+	border: variables.$thick-border;
 	th,
 	td {
 		border: $table-border;
